@@ -7,3 +7,13 @@ First, a custom R script is utilized to import and clean the data, including rep
 ![heatmap](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/549c56bc-2f9b-4721-9b9d-ba335d34206f)
 
 Next, another R script, "add_stats.R", was written to concatonate columns and add statistics between the two groups, such as foldchange, p-value (via student's t-test), and negative log_2 of the fold change. This allows us to create a https://en.wikipedia.org/wiki/Volcano_plot_(statistics), a common method of "quickly identify changes in large data sets composed of replicate data." Running "add_stats.R" on "83_bc_prot.xlsx" excel file produces "cleaned_data_plus_stats.csv", which is input into the Python script "volcano.py", producing the following interactive plot in an html window:
+
+![volcano](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/97100941-8c1d-426d-a7a9-0a67ed736b79)
+
+Like the heatmap, the plot is interactive, and statistics and gene names appear upon hovering:
+
+![image](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/778648d8-9313-4773-99a2-f897a1355a9f)
+
+In this manner, one can explore the data at their leisure. The original input can be mined via other scripts for the greatest foldchange and -log_2(p-value) statistics.
+
+

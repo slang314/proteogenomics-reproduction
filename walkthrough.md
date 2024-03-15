@@ -20,4 +20,6 @@ Like the heatmap, the plot is interactive, and statistics and gene names appear 
 
 In this manner, one can explore the data at their leisure. The original input can be mined via other scripts for the greatest foldchange and -log_2(p-value) statistics.
 
+**Sources Cited:**
 
+Mertins, P., Mani, D., Ruggles, K. et al. Proteogenomics connects somatic mutations to signalling in breast cancer. Nature 534, 55–62 (2016). https://doi.org/10.1038/nature18003

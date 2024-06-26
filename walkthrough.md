@@ -1,12 +1,12 @@
-##The purpose of this github repository is to demonstrate analysis and visualization of data from the 2016 Nature paper, *Proteogenomics connects somatic mutations to signalling in breast cancer* by Mertins et al.##
+## The purpose of this github repository is to demonstrate analysis and visualization of data from the 2016 Nature paper, *Proteogenomics connects somatic mutations to signalling in breast cancer* by Mertins et al.
 
-**This analysis and visualization project was performed as a final project in the course 605.622 Data Visualization, part of the computer science program at Johns Hopkins Engineering for Professionals program.**
+**This analysis and visualization project was performed as a final project in the course 605.622 Data Visualization, part of the computer science program at Johns Hopkins Engineering for Professionals program (Fall 2023).**
 
 The data to be visualized are a proteomic dataset of iTRAQ ratios of 80 breast cancer and 3 healthy tissue mass spectrometry analysis. The data are visualized in a heatmap, volcano plot (fold change, breast cancer vs. healthy proteome expression), and principle component analysis. In particular the principle component analysis is used to visualize data post machine learning clustering (k-means).
 
 To begin, a new workbook containing the data we wish to work with was created from sheet Global-Proteome-G3 in "CPTAC_BC_SupplementaryTable03.xlsx". This new workbook was named "83_bc_prot.xlsx" and is the basis for the heatmap and volcano plots. In order to create a heatmap of all the genes, a custom R script "clean_data.R" is utilized. This script imports and cleans the data, including reproducing the author's original methods of discarding genes with indeterminate measurements and whose standard deviations were less than 1.5. 
 
-Running "clean_data.R" on "83_bc_prot.xlsx" generates "cleaned_data.csv", which is subsequently utilized by a custom Python script "heatmap_script.py" to generate a heatmap. This script makes use of the *plotly* and *pandas* packages for data visualization. This python script also renames the samples to breast cancer and healthy before plotting. Running "heatmap_script.py" on "cleaned_data.csv" generates a heatmap:
+Running "clean_data.R" on "83_bc_prot.xlsx" generates "77_cancer_proteomes_CPTAC_itraq_standev.csv", which is subsequently utilized by a custom Python script "heatmap_less_NaN_standev.py" to generate a heatmap. This script makes use of the *plotly* and *pandas* packages for data parsing and visualization. This python script also renames the samples to breast cancer and healthy before plotting. Running "heatmap_script.py" on "cleaned_data.csv" generates a heatmap:
 
 
 ![heatmap](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/549c56bc-2f9b-4721-9b9d-ba335d34206f)

@@ -1,4 +1,4 @@
-**The purpose of this github repository is to demonstrate analysis and visualization of data from the 2016 Nature paper, *Proteogenomics connects somatic mutations to signalling in breast cancer* by Mertins et al. **
+##The purpose of this github repository is to demonstrate analysis and visualization of data from the 2016 Nature paper, *Proteogenomics connects somatic mutations to signalling in breast cancer* by Mertins et al.##
 
 **This analysis and visualization project was performed as a final project in the course 605.622 Data Visualization, part of the computer science program at Johns Hopkins Engineering for Professionals program.**
 

@@ -1,4 +1,4 @@
-## The purpose of this github repository is to demonstrate analysis and visualization of data from the 2016 Nature paper, *Proteogenomics connects somatic mutations to signalling in breast cancer* by Mertins et al
+## The purpose of this github repository is to demonstrate analysis and visualization of data from the 2016 Nature paper, *Proteogenomics connects somatic mutations to signalling in breast cancer* by Mertins et al. The analysis and visualization project was performed as a final project in the course 605.622 Data Visualization, part of the computer science program at Johns Hopkins Engineering for Professionals program.
 
 The data to be visualized are a proteomic dataset of iTRAQ ratios of 80 breast cancer and 3 healthy tissue mass spectrometry analysis. The data are visualized in a heatmap, volcano plot (fold change, breast cancer vs. healthy proteome expression), and principle component analysis. In particular the principle component analysis is used to visualize data post machine learning clustering (k-means).
 
@@ -19,7 +19,7 @@ Like the heatmap, the plot is interactive, and statistics and gene names appear 
 ![image](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/778648d8-9313-4773-99a2-f897a1355a9f)
 
 In this manner, one can explore the data at their leisure. The original input can be mined via other scripts for the greatest foldchange and -log_2(p-value) statistics.
-
+Next, a k-means clustering on the input samples was performed via the Python machine learning library _scikit-learn_ (sklearn). 
 **Sources Cited:**
 
 Mertins, P., Mani, D., Ruggles, K. et al. Proteogenomics connects somatic mutations to signalling in breast cancer. Nature 534, 55–62 (2016). https://doi.org/10.1038/nature18003

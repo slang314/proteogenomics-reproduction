@@ -30,7 +30,7 @@ Next, a k-means clustering on the input samples was performed via the Python mac
 
 ![newplot(3)](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/4a1f0c4f-38f8-4da8-990f-48829a99cbc8)
 
-Unfortunately, the reproducibility of the clustering was highly sensitive to the initial random state set when calling the kmeans clustering function, and I am still working to understand precisely what is meant by this. My first notion is that the precise code, packages, and random state (if entered) utilized for the authors initial clustering needs to be more precisely understood, along with misunderstandings which may exist for me as a student of machine learning.
+The reproducibility of the clustering was highly sensitive to the initial random state set when calling the kmeans clustering function, and I am still working to understand precisely what is meant by this. My first notion is that the precise code, packages, and random state (if entered) utilized for the authors initial clustering needs to be more precisely understood, along with misunderstandings which may exist for me as a student of machine learning.
 
 
 **Sources Cited:**

@@ -18,7 +18,7 @@ Next, Excel was utilized to concatonate columns and add statistics between the t
 
 ![newplot(4)](https://github.com/slang314/proteogenomics-reproduction/assets/155842228/486ceccb-d4c7-4525-8a4d-278048cc0770)
 
-The python script was written to add statistics in the title. Comparing cancer samples vs. normal we see that in cancer cells 1,646 genes were found to be underexpressed as per a protein measurement and 6,348 are found to be overexpressed. This is consistent with what we know about [cancer global overexpression or hyperexpression of genes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9683723/) as well as [cancer global DNA hypomethylation](https://www.nature.com/articles/nature18003) enabling higher expression levels as it is typically promoter methylation which silences a given gene, among other mechanisms. 
+The python script was written to add statistics in the title. Comparing cancer samples vs. normal we see that in cancer cells 1,646 genes were found to be underexpressed as per a protein measurement and 6,348 are found to be overexpressed. This is consistent with what we know about [cancer global overexpression or hyperexpression of genes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9683723/) as well as cancer global DNA hypomethylation enabling higher expression levels as it is typically promoter methylation which silences a given gene, among other mechanisms. 
 
 Like the heatmap, the plot is interactive, and statistics and gene names appear upon hovering:
 
